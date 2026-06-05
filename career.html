@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers - Tamar Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.35.0/tabler-icons.min.css" integrity="sha512-gzw5zNP2TRq+DKyAqZfDclaTG4dOrGJrwob2Fc8xwcJPDPVij0HowLIMZ8c1NefFM0OZZYUUUNoPfcoI5jqudw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+        /* Hide native summary marker */
+        summary.ts-job-header {
+            list-style: none;
+        }
+        summary.ts-job-header::-webkit-details-marker {
+            display: none;
+        }
+        /* Rotate icon when open */
+        details.ts-job-card[open] .ts-job-toggle {
+            transform: rotate(180deg);
+            color: #5b8cf7;
+        }
+        /* Add transition styling */
+        details.ts-job-card .ts-job-body {
+            display: block; /* Override default styling for custom structure */
+            animation: accordionSlideDown 0.2s ease-out;
+        }
+        @keyframes accordionSlideDown {
+            from { opacity: 0; transform: translateY(-4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ts">
+        <!-- Scroll progress indicator -->
+        <div class="ts-progress" id="ts-progress"></div>
+
+        <!-- Navigation Menu -->
+        <nav class="ts-nav" id="ts-nav">
+            <div class="container">
+                <a href="index.html" class="ts-logo">
+                    <img width="110px" src="images/logo.png" alt="Tamar Software">
+                </a>
+                <ul class="ts-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="career.html" class="active">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <button class="ts-hamburger" id="ts-hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="ts-mobile-menu" id="ts-mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="industries.html">Industries</a>
+            <a href="career.html">Career</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Inner Page Hero Banner -->
+        <header class="ts-inner-hero">
+            <div class="ts-hero-grid" aria-hidden="true"></div>
+            <div class="ts-hero-orb1" aria-hidden="true"></div>
+            <div class="ts-hero-orb2" aria-hidden="true"></div>
+            <div class="container">
+                <div class="ts-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="sep">/</span>
+                    <span>Careers</span>
+                </div>
+                <h1 class="ts-inner-title">Work With Us</h1>
+                <p class="ts-inner-subtitle">Join our growing team of engineers and build next-generation web, mobile, and intelligent cloud systems.</p>
+            </div>
+        </header>
+
+        <!-- Company Benefits Section -->
+        <section class="ts-section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 48px;">
+                    <span class="ts-tag">Benefits</span>
+                    <h2 class="ts-stitle">Why Join Tamar Software?</h2>
+                    <p class="ts-ssub" style="margin: 10px auto 0;">We prioritize continuous learning, open collaboration, and an environment where you can scale your career.</p>
+                </div>
+
+                <div class="ts-career-benefits">
+                    <!-- Remote Work -->
+                    <div class="ts-benefit-card">
+                        <div class="ts-benefit-icon"><i class="ti ti-wifi"></i></div>
+                        <h3 class="ts-benefit-title">Remote & Hybrid Flexibility</h3>
+                        <p class="ts-benefit-desc">Work from home or collaborate from our modern Noida engineering headquarters. We provide home-office setup budgets.</p>
+                    </div>
+
+                    <!-- Learning -->
+                    <div class="ts-benefit-card">
+                        <div class="ts-benefit-icon"><i class="ti ti-certificate"></i></div>
+                        <h3 class="ts-benefit-title">Learning & Certification Budgets</h3>
+                        <p class="ts-benefit-desc">We cover expenses for cloud training (AWS/Azure), React certifications, and advanced IT courses to keep your skills sharp.</p>
+                    </div>
+
+                    <!-- Tech Stack -->
+                    <div class="ts-benefit-card">
+                        <div class="ts-benefit-icon"><i class="ti ti-code-square"></i></div>
+                        <h3 class="ts-benefit-title">Modern Engineering Stacks</h3>
+                        <p class="ts-benefit-desc">Work with cutting-edge tools: Next.js, Node.js, AI APIs, Docker, and Kubernetes. No legacy system maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Positions Section -->
+        <section class="ts-section" style="background: #f8f9fc; border-top: 1px solid #e3e6f0; border-bottom: 1px solid #e3e6f0;">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <span class="ts-tag">Opportunities</span>
+                    <h2 class="ts-stitle">Active Openings</h2>
+                    <p class="ts-ssub" style="margin: 10px auto 0;">Click on a job role to view detailed requirements, responsibilities, and to submit your application.</p>
+                </div>
+
+                <div class="ts-job-list">
+                    
+                    <!-- Job 1: Frontend Engineer -->
+                    <details class="ts-job-card">
+                        <summary class="ts-job-header">
+                            <div class="ts-job-info">
+                                <h3 class="ts-job-title">Senior Frontend Engineer</h3>
+                                <div class="ts-job-meta">
+                                    <span class="ts-job-tag tech">React / Next.js</span>
+                                    <span class="ts-job-tag">Noida / Remote</span>
+                                    <span class="ts-job-tag">Full-Time</span>
+                                </div>
+                            </div>
+                            <div class="ts-job-toggle"><i class="ti ti-chevron-down"></i></div>
+                        </summary>
+                        <div class="ts-job-body">
+                            <h4 class="ts-job-section-title">What you will do:</h4>
+                            <ul>
+                                <li>Build highly responsive and interactive client-facing dashboards using React, Next.js, and TypeScript.</li>
+                                <li>Collaborate with UI/UX designers to translate Figma mockups into premium, clean HTML and vanilla CSS.</li>
+                                <li>Optimize web applications for maximum loading speed and Interaction to Next Paint (INP) scores.</li>
+                            </ul>
+                            <h4 class="ts-job-section-title">What we look for:</h4>
+                            <ul>
+                                <li>3+ years of experience with React, state management (Redux/Zustand), and modern CSS layouts.</li>
+                                <li>Proficiency in RESTful and GraphQL API integrations.</li>
+                                <li>A strong eye for visual layout detail, margins, fonts, and responsive grid alignments.</li>
+                            </ul>
+                            <div class="ts-job-actions">
+                                <button class="ts-btn-primary apply-trigger" data-job="Senior Frontend Engineer">Apply For This Job</button>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Job 2: Full Stack Developer -->
+                    <details class="ts-job-card">
+                        <summary class="ts-job-header">
+                            <div class="ts-job-info">
+                                <h3 class="ts-job-title">Full Stack Web Developer</h3>
+                                <div class="ts-job-meta">
+                                    <span class="ts-job-tag tech">Node.js / React</span>
+                                    <span class="ts-job-tag">Noida / Remote</span>
+                                    <span class="ts-job-tag">Full-Time</span>
+                                </div>
+                            </div>
+                            <div class="ts-job-toggle"><i class="ti ti-chevron-down"></i></div>
+                        </summary>
+                        <div class="ts-job-body">
+                            <h4 class="ts-job-section-title">What you will do:</h4>
+                            <ul>
+                                <li>Develop robust backend services and REST APIs using Node.js, Express, and PostgreSQL/MongoDB.</li>
+                                <li>Maintain database security rules, read-write indexes, and handle concurrent query optimizations.</li>
+                                <li>Build admin interfaces and connect backend databases to React frontend dashboards.</li>
+                            </ul>
+                            <h4 class="ts-job-section-title">What we look for:</h4>
+                            <ul>
+                                <li>2+ years of professional backend development with Node.js and SQL/NoSQL databases.</li>
+                                <li>Familiarity with JWT auth systems, API security rules, and server deployment.</li>
+                                <li>Basic knowledge of Docker and containerization is a plus.</li>
+                            </ul>
+                            <div class="ts-job-actions">
+                                <button class="ts-btn-primary apply-trigger" data-job="Full Stack Web Developer">Apply For This Job</button>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Job 3: DevOps Engineer -->
+                    <details class="ts-job-card">
+                        <summary class="ts-job-header">
+                            <div class="ts-job-info">
+                                <h3 class="ts-job-title">DevOps & Cloud Engineer</h3>
+                                <div class="ts-job-meta">
+                                    <span class="ts-job-tag tech">AWS / Kubernetes</span>
+                                    <span class="ts-job-tag">Noida / Remote</span>
+                                    <span class="ts-job-tag">Full-Time</span>
+                                </div>
+                            </div>
+                            <div class="ts-job-toggle"><i class="ti ti-chevron-down"></i></div>
+                        </summary>
+                        <div class="ts-job-body">
+                            <h4 class="ts-job-section-title">What you will do:</h4>
+                            <ul>
+                                <li>Configure and maintain staging and production servers on AWS, Microsoft Azure, or GCP.</li>
+                                <li>Set up automated CI/CD pipeline triggers using GitHub Actions or Jenkins.</li>
+                                <li>Monitor server loads, configure database auto-backups, and optimize server bills.</li>
+                            </ul>
+                            <h4 class="ts-job-section-title">What we look for:</h4>
+                            <ul>
+                                <li>Familiarity with Docker containers, Kubernetes orchestration, and Linux shell commands.</li>
+                                <li>Experience setting up Nginx proxies, SSL certificates, and firewall policies.</li>
+                                <li>Knowledge of Terraform or Ansible infrastructure-as-code is highly valued.</li>
+                            </ul>
+                            <div class="ts-job-actions">
+                                <button class="ts-btn-primary apply-trigger" data-job="DevOps & Cloud Engineer">Apply For This Job</button>
+                            </div>
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Modal Popup -->
+        <div class="ts-modal" id="apply-modal">
+            <div class="ts-modal-content">
+                <button class="ts-modal-close" id="modal-close-btn">&times;</button>
+                <h3 class="ts-modal-title" id="modal-title-text">Apply For Position</h3>
+                <form id="apply-form" action="#" onsubmit="handleApplySubmit(event)">
+                    <input type="hidden" id="form-job-title" name="job_title">
+                    <div class="ts-form-row">
+                        <div class="ts-form-group">
+                            <label class="ts-label" for="app-name">Full Name</label>
+                            <input class="ts-input" type="text" id="app-name" required placeholder="John Doe">
+                        </div>
+                        <div class="ts-form-group">
+                            <label class="ts-label" for="app-email">Email Address</label>
+                            <input class="ts-input" type="email" id="app-email" required placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div class="ts-form-row">
+                        <div class="ts-form-group">
+                            <label class="ts-label" for="app-phone">Phone Number</label>
+                            <input class="ts-input" type="tel" id="app-phone" required placeholder="+91 99999 99999">
+                        </div>
+                        <div class="ts-form-group">
+                            <label class="ts-label" for="app-experience">Years of Experience</label>
+                            <select class="ts-select" id="app-experience" required>
+                                <option value="" disabled selected>Select Experience</option>
+                                <option value="0-1">0 - 1 Years</option>
+                                <option value="1-3">1 - 3 Years</option>
+                                <option value="3-5">3 - 5 Years</option>
+                                <option value="5+">5+ Years</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ts-form-group">
+                        <label class="ts-label" for="app-resume">Resume Link / Portfolio</label>
+                        <input class="ts-input" type="url" id="app-resume" required placeholder="https://github.com/johndoe">
+                    </div>
+                    <div class="ts-form-group last">
+                        <label class="ts-label" for="app-cover">Why do you want to join Tamar Software?</label>
+                        <textarea class="ts-textarea" id="app-cover" required placeholder="Brief introduction..."></textarea>
+                    </div>
+                    <button type="submit" class="ts-btn-primary" style="width: 100%;">Submit Application</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="ts-footer">
+            <div class="container">
+                <div class="ts-flogo">
+                    <img width="60" src="images/logo.png" alt="Tamar Software Logo">
+                </div>
+                <div class="ts-flinks">
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="services.html">Services</a>
+                    <a href="industries.html">Industries</a>
+                    <a href="career.html">Career</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://maps.google.com" target="_blank">Noida, India</a>
+                </div>
+                <div class="ts-fcopy">© 2026 Tamar Software LLP</div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script>
+        // Modal popup toggles
+        const modal = document.getElementById('apply-modal');
+        const modalTitle = document.getElementById('modal-title-text');
+        const formJobInput = document.getElementById('form-job-title');
+        const closeBtn = document.getElementById('modal-close-btn');
+
+        document.querySelectorAll('.apply-trigger').forEach(button => {
+            button.addEventListener('click', () => {
+                const jobName = button.getAttribute('data-job');
+                modalTitle.textContent = `Apply for ${jobName}`;
+                formJobInput.value = jobName;
+                modal.classList.add('open');
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('open');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('open');
+            }
+        });
+
+        // Form submission handling
+        function handleApplySubmit(event) {
+            event.preventDefault();
+            alert(`Thank you for applying for the ${formJobInput.value} position! We will review your application and contact you soon.`);
+            modal.classList.remove('open');
+            document.getElementById('apply-form').reset();
+        }
+    </script>
+</body>
+
+</html>

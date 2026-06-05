@@ -1,20 +1,30 @@
-
-
+// ── Scroll Progress Bar ──
 window.addEventListener('scroll', () => {
-const scrolled = window.scrollY;
-const total = document.body.scrollHeight - window.innerHeight;
-const pct = Math.min(scrolled / total, 1);
-document.getElementById('ts-progress').style.transform = `scaleX(${pct})`;
+  const progressEl = document.getElementById('ts-progress');
+  if (!progressEl) return;
+  const scrolled = window.scrollY;
+  const total = document.body.scrollHeight - window.innerHeight;
+  const pct = Math.min(scrolled / total, 1);
+  progressEl.style.transform = `scaleX(${pct})`;
 }, { passive: true });
 
-const nav = document.getElementById('ts-nav');
-const menu = document.getElementById('ts-mobile-menu');
+// ── Hamburger Menu Toggle ──
+const hamburger = document.getElementById('ts-hamburger');
+const tsNav = document.getElementById('ts-nav');
 
+if (hamburger && tsNav) {
+  hamburger.addEventListener('click', () => {
+    tsNav.classList.toggle('open');
+  });
+}
+
+// ── Typewriter Animation ──
 const typeWords = ['Intelligent', 'Scalable', 'Innovative', 'Reliable', 'Powerful'];
 let twIndex = 0, twChar = 0, twDeleting = false;
 const twEl = document.getElementById('ts-typeword');
 
 function typeWrite() {
+  if (!twEl) return;
   const word = typeWords[twIndex];
 
   if (!twDeleting) {
@@ -36,13 +46,12 @@ function typeWrite() {
 
   setTimeout(typeWrite, twDeleting ? 55 : 90);
 }
-setTimeout(typeWrite, 1200);
 
-
-
+if (twEl) {
+  setTimeout(typeWrite, 1200);
+}
 
 // ── Case Study Data ──
-
 let products = [
   {
     name: 'Online OPD - Naturalminds Digital Systems LLP',
@@ -71,14 +80,15 @@ let products = [
 ];
 
 const cardContainer = document.getElementById('products');
-
-cardContainer.innerHTML = products
-  .map(product => `
-    <div class="ts-tcard reveal d1 visible">
-      <h2>${product.name}</h2>
-      <div class="ts-tquote">
-        "${product.quote}"
+if (cardContainer) {
+  cardContainer.innerHTML = products
+    .map(product => `
+      <div class="ts-tcard reveal d1 visible">
+        <h2>${product.name}</h2>
+        <div class="ts-tquote">
+          "${product.quote}"
+        </div>
       </div>
-    </div>
-  `)
-  .join('');
+    `)
+    .join('');
+}

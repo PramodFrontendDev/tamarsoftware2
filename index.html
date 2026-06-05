@@ -19,23 +19,38 @@
 
 <body>
     <div class="ts">
-        <!-- <div class="ts-progress" id="ts-progress"></div> -->
+        <!-- Scroll progress indicator -->
+        <div class="ts-progress" id="ts-progress"></div>
         <nav class="ts-nav" id="ts-nav">
             <div class="container">
-                <a href="/" class="ts-logo">
-                    <img width="110px" src="images/logo.png" alt="">
+                <a href="index.html" class="ts-logo">
+                    <img width="110px" src="images/logo.png" alt="Tamar Software">
                 </a>
                 <ul class="ts-nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#industries">Industries</a></li>
-                    <li><a href="#careers">Projects</a></li>
-                    <li><a class="" href="#contact">Contact Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
-
+                <button class="ts-hamburger" id="ts-hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
+        <div class="ts-mobile-menu" id="ts-mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="industries.html">Industries</a>
+            <a href="career.html">Career</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
         <section class="ts-hero">
             <div class="ts-hero-grid" aria-hidden="true"></div>
             <div class="ts-hero-orb1" aria-hidden="true"></div>
@@ -58,8 +73,8 @@
                             telecom scale with confidence.
                         </p>
                         <div class="ts-hero-btns">
-                            <button class="ts-btn-primary">Explore Our Services</button>
-                            <button class="ts-btn-outline">View Case Studies</button>
+                            <a href="services.html" class="ts-btn-primary" style="text-decoration: none;">Explore Our Services</a>
+                            <a href="products.html" class="ts-btn-outline" style="text-decoration: none;">View Case Studies</a>
                         </div>
                     </div>
                     <div class="banner-img">

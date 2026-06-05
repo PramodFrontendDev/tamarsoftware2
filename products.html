@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products & Case Studies - Tamar Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.35.0/tabler-icons.min.css" integrity="sha512-gzw5zNP2TRq+DKyAqZfDclaTG4dOrGJrwob2Fc8xwcJPDPVij0HowLIMZ8c1NefFM0OZZYUUUNoPfcoI5jqudw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+    <div class="ts">
+        <!-- Scroll progress indicator -->
+        <div class="ts-progress" id="ts-progress"></div>
+
+        <!-- Navigation Menu -->
+        <nav class="ts-nav" id="ts-nav">
+            <div class="container">
+                <a href="index.html" class="ts-logo">
+                    <img width="110px" src="images/logo.png" alt="Tamar Software">
+                </a>
+                <ul class="ts-nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <button class="ts-hamburger" id="ts-hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="ts-mobile-menu" id="ts-mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="industries.html">Industries</a>
+            <a href="career.html">Career</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Inner Page Hero Banner -->
+        <header class="ts-inner-hero">
+            <div class="ts-hero-grid" aria-hidden="true"></div>
+            <div class="ts-hero-orb1" aria-hidden="true"></div>
+            <div class="ts-hero-orb2" aria-hidden="true"></div>
+            <div class="container">
+                <div class="ts-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="sep">/</span>
+                    <span>Products & Case Studies</span>
+                </div>
+                <h1 class="ts-inner-title">Our Products & Work</h1>
+                <p class="ts-inner-subtitle">A detailed flow list of custom platforms and advanced software systems built by our dedicated engineering team.</p>
+            </div>
+        </header>
+
+        <!-- Products Flow List -->
+        <section class="ts-section">
+            <div class="container">
+                <div class="ts-flow-container">
+                    
+                    <!-- Product 1: Online OPD -->
+                    <div class="ts-flow-row">
+                        <div class="ts-flow-text">
+                            <span class="ts-tag">Healthcare IT</span>
+                            <h3>Online OPD Patient Portal</h3>
+                            <p>Built for NaturalMinds Digital Systems LLP, this state-of-the-art healthcare portal streamlines OPD registrations, doctor scheduling, and digital prescriptions. It enables seamless communication between patients and clinics while keeping patient data strictly secure.</p>
+                            <ul class="ts-features-list">
+                                <li><i class="ti ti-circle-check"></i> Real-time doctor availability scheduler</li>
+                                <li><i class="ti ti-circle-check"></i> Integrated video consultation & prescription tool</li>
+                                <li><i class="ti ti-circle-check"></i> HIPAA-compliant encrypted patient records</li>
+                            </ul>
+                            <div class="ts-metric-box">
+                                <span class="ts-metric-value">35% Reduction</span>
+                                <span class="ts-metric-label">In patient check-in & waiting times</span>
+                            </div>
+                        </div>
+                        <div class="ts-flow-visual">
+                            <!-- Code Visualizer -->
+                            <div class="ts-mockup-code">
+                                <span class="comment">// Appointment Booking System</span><br>
+                                <span class="keyword">const</span> bookAppointment = <span class="keyword">async</span> (patientId, doctorId, time) => {<br>
+                                &nbsp;&nbsp;<span class="keyword">const</span> slot = <span class="keyword">await</span> db.verifySlot(doctorId, time);<br>
+                                &nbsp;&nbsp;<span class="keyword">if</span> (!slot.isAvailable) <span class="keyword">throw</span> <span class="keyword">new</span> Error(<span class="string">"Slot taken"</span>);<br>
+                                &nbsp;&nbsp;<span class="keyword">return</span> <span class="keyword">await</span> db.createAppointment({ patientId, doctorId, time });<br>
+                                };
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Horse & Saddle -->
+                    <div class="ts-flow-row">
+                        <div class="ts-flow-text">
+                            <span class="ts-tag">Manufacturing & ERP</span>
+                            <h3>Horse & Saddle ERP Optimizer</h3>
+                            <p>A smart enterprise resource planning and manufacturing execution system tailored for leather goods manufacturers. It tracks raw material procurement, craftsmanship steps, quality inspection, and shipping timelines in real-time.</p>
+                            <ul class="ts-features-list">
+                                <li><i class="ti ti-circle-check"></i> Automated inventory tracking & reorder triggers</li>
+                                <li><i class="ti ti-circle-check"></i> Craftsmanship stage monitoring with barcode scanning</li>
+                                <li><i class="ti ti-circle-check"></i> Real-time shipping dashboard and client portal</li>
+                            </ul>
+                            <div class="ts-metric-box">
+                                <span class="ts-metric-value">42% Increase</span>
+                                <span class="ts-metric-label">In production workflow visibility</span>
+                            </div>
+                        </div>
+                        <div class="ts-flow-visual">
+                            <!-- Visual Chart -->
+                            <div class="ts-mockup-chart">
+                                <div class="ts-chart-bar" style="height: 40px;" data-val="Q1"></div>
+                                <div class="ts-chart-bar" style="height: 70px;" data-val="Q2"></div>
+                                <div class="ts-chart-bar" style="height: 110px;" data-val="Q3"></div>
+                                <div class="ts-chart-bar" style="height: 150px;" data-val="Q4"></div>
+                            </div>
+                            <div class="ts-chart-label">ERP Integration Productivity Gains</div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Automated Dustbins -->
+                    <div class="ts-flow-row">
+                        <div class="ts-flow-text">
+                            <span class="ts-tag">IoT & Smart City</span>
+                            <h3>Automated Smart Waste Management</h3>
+                            <p>An IoT-enabled waste monitoring system designed to optimize municipal waste collection. Real-time fill-level sensors inside custom smart dustbins transmit garbage status to a cloud-based logistics map, optimizing fuel usage and bin clearings.</p>
+                            <ul class="ts-features-list">
+                                <li><i class="ti ti-circle-check"></i> Ultrasonic fill-level sensor integrations (LoRaWAN)</li>
+                                <li><i class="ti ti-circle-check"></i> Smart route optimization for garbage trucks</li>
+                                <li><i class="ti ti-circle-check"></i> Low-battery and fire warning safety notifications</li>
+                            </ul>
+                            <div class="ts-metric-box">
+                                <span class="ts-metric-value">28% Reduction</span>
+                                <span class="ts-metric-label">In logistics fuel consumption & carbon footprint</span>
+                            </div>
+                        </div>
+                        <div class="ts-flow-visual">
+                            <div style="text-align: center; color: #5b8cf7; font-size: 80px; padding: 20px 0;">
+                                <i class="ti ti-trash"></i>
+                            </div>
+                            <div style="font-size: 13px; color: #4a567a; text-align: center; font-weight: 500;">
+                                Cloud Node Sync: Active <span style="color: #2ec4b6;">(99.9% Up)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4: Advanced Chatbot -->
+                    <div class="ts-flow-row">
+                        <div class="ts-flow-text">
+                            <span class="ts-tag">Artificial Intelligence</span>
+                            <h3>Cognitive Conversational AI Bot</h3>
+                            <p>Our advanced, neural-powered customer support chatbot. It parses complex user intents, executes backend API lookups (like shipping or billing queries), and resolves standard customer queries instantly without needing human agent intervention.</p>
+                            <ul class="ts-features-list">
+                                <li><i class="ti ti-circle-check"></i> RAG-based domain knowledge ingestion</li>
+                                <li><i class="ti ti-circle-check"></i> Omnichannel deployment (WhatsApp, Slack, Web Widget)</li>
+                                <li><i class="ti ti-circle-check"></i> Seamless live-agent handoff protocol</li>
+                            </ul>
+                            <div class="ts-metric-box">
+                                <span class="ts-metric-value">74% Queries</span>
+                                <span class="ts-metric-label">Fully automated and resolved on first contact</span>
+                            </div>
+                        </div>
+                        <div class="ts-flow-visual">
+                            <div class="ts-mockup-code">
+                                <span class="keyword">class</span> ChatbotController {<br>
+                                &nbsp;&nbsp;<span class="keyword">async</span> handleMessage(text) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">const</span> intent = <span class="keyword">await</span> nlp.classify(text);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (intent.confidence &gt; 0.85) {<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="keyword">await</span> db.getFAQResponse(intent.tag);<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> <span class="keyword">this</span>.handoffToHuman();<br>
+                                &nbsp;&nbsp;}<br>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5: Online Venue Booking -->
+                    <div class="ts-flow-row">
+                        <div class="ts-flow-text">
+                            <span class="ts-tag">E-Commerce & Events</span>
+                            <h3>Venue Booking - Madnue Solutions</h3>
+                            <p>Launched for Madnue in 2020, this booking platform simplifies the process of discovering and booking banquet halls, conference spaces, and wedding venues. Features include high-quality image carousels, payment gateway support, and interactive calendar bookings.</p>
+                            <ul class="ts-features-list">
+                                <li><i class="ti ti-circle-check"></i> Filter-rich venue catalog based on price, location, size</li>
+                                <li><i class="ti ti-circle-check"></i> Instant calendar sync and reservation management</li>
+                                <li><i class="ti ti-circle-check"></i> Integrated secure payment links (Razorpay, Stripe)</li>
+                            </ul>
+                            <div class="ts-metric-box">
+                                <span class="ts-metric-value">120K+ Users</span>
+                                <span class="ts-metric-label">Registered active users and venue hosts</span>
+                            </div>
+                        </div>
+                        <div class="ts-flow-visual">
+                            <div style="display: flex; gap: 10px; flex-direction: column;">
+                                <div style="display:flex; justify-content:space-between; border-bottom:1px solid #f3f6f9; padding-bottom:8px;">
+                                    <span style="font-weight:600; color:#0d1b3e; font-size:14px;">Grand Ballroom Booking</span>
+                                    <span style="background:#eef2fe; color:#5b8cf7; font-size:11px; padding:3px 8px; border-radius:10px; font-weight:600;">CONFIRMED</span>
+                                </div>
+                                <div style="font-size:12px; color:#5d6b8a; line-height:1.6;">
+                                    Date: June 18, 2026<br>
+                                    Client: Madnue Solutions LLP<br>
+                                    Status: Transaction success id #TXN88921
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6: Power BI Dashboard -->
+                    <div class="ts-flow-row">
+                        <div class="ts-flow-text">
+                            <span class="ts-tag">Business Intelligence</span>
+                            <h3>Power BI Dashboard & Analytics</h3>
+                            <p>A sophisticated business intelligence dashboard integrated with custom PowerApps. It parses sales data, customer support tickets, and employee performance logs, delivering real-time actionable insights to management.</p>
+                            <ul class="ts-features-list">
+                                <li><i class="ti ti-circle-check"></i> Interactive drill-down graphs & visual reports</li>
+                                <li><i class="ti ti-circle-check"></i> Automated database pipelines (SQL Server & Azure)</li>
+                                <li><i class="ti ti-circle-check"></i> Custom dashboard settings per management level</li>
+                            </ul>
+                            <div class="ts-metric-box">
+                                <span class="ts-metric-value">98% Accuracy</span>
+                                <span class="ts-metric-label">In weekly revenue prediction modeling</span>
+                            </div>
+                        </div>
+                        <div class="ts-flow-visual">
+                            <div class="ts-mockup-chart">
+                                <div class="ts-chart-bar" style="background:#5d6b8a; height: 120px;" data-val="12k"></div>
+                                <div class="ts-chart-bar" style="height: 130px;" data-val="15k"></div>
+                                <div class="ts-chart-bar" style="height: 170px;" data-val="21k"></div>
+                            </div>
+                            <div class="ts-chart-label">Direct Revenue growth insights synced</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Callout -->
+        <section class="ts-section" style="background: #0d1b3e; color: #fff; text-align: center; border-top: 1px solid rgba(91, 140, 247, 0.15);">
+            <div class="container">
+                <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 12px; color: #fff;">Need a Custom Solution?</h2>
+                <p style="color: #9bacd0; max-width: 500px; margin: 0 auto 30px; font-size: 14px; line-height: 1.6;">Our software engineers can design, build, and deploy custom solutions tailored specifically for your workflow.</p>
+                <a href="contact.html" class="ts-btn-primary" style="display:inline-block; text-decoration:none;">Schedule A Call</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="ts-footer">
+            <div class="container">
+                <div class="ts-flogo">
+                    <img width="60" src="images/logo.png" alt="Tamar Software Logo">
+                </div>
+                <div class="ts-flinks">
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="services.html">Services</a>
+                    <a href="industries.html">Industries</a>
+                    <a href="career.html">Career</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="https://maps.google.com" target="_blank">Noida, India</a>
+                </div>
+                <div class="ts-fcopy">© 2026 Tamar Software LLP</div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
