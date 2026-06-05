@@ -917,11 +917,17 @@ body {
     background: var(--ts-bg-card);
     border: 1px solid var(--ts-border);
     border-radius: 16px;
-    padding: 32px;
+    padding: 10px;
     box-shadow: var(--ts-shadow-md);
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ts-flow-visual img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
 }
 
 .ts-flow-visual:hover {
