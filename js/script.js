@@ -54,26 +54,32 @@ if (twEl) {
 // ── Case Study Data ──
 let products = [
   {
+    thumbnail: './images/opd.png',
     name: 'Online OPD - Naturalminds Digital Systems LLP',
     quote: 'NaturalMinds Digital Systems LLP was established in 2019 with a vision to leverage technology for improving access to healthcare services...',  
   },
   {
+    thumbnail: './images/horse-saddle.png',
     name: 'Horse & Saddle Case Study',
     quote: "Precision and efficiency are paramount in today's competitive manufacturing environment. Especially for companies ..."
   },
   {
+    thumbnail: './images/smart-dustbin.png',
     name: "Automated Dustbins Case Study",
     quote: "The smart waste management project primarily aims to develop and implement innovative waste management systems..."
   },
   {
+    thumbnail: './images/ai-boat.png',
     name: "Advanced Chatbot Case Study",
     quote: "Our advanced chatbot solution is engineered to offer highly accurate user intent recognition and generate responses..."
   },
   {
+    thumbnail: './images/venue-booking.png',
     name: "Online Venue Booking - Madnue Solutions",
     quote: "Madnue was launched in 2020 with the aim of simplifying the process of discovering and booking venues for various events..."
   },
   {
+    thumbnail: './images/dashboard.png',
     name: "Power BI Dashboard",
     quote: "The Power BI dashboard, integrated with PowerApps, is a sophisticated data visualization and management tool..."
   }
@@ -84,6 +90,9 @@ if (cardContainer) {
   cardContainer.innerHTML = products
     .map(product => `
       <div class="ts-tcard reveal d1 visible">
+        <div class="service-img">
+          <img src="${product.thumbnail}" alt="">
+        </div>
         <h2>${product.name}</h2>
         <div class="ts-tquote">
           "${product.quote}"
