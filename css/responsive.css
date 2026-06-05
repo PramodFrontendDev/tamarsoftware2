@@ -1,0 +1,57 @@
+   /* ── Responsive ── */
+   @media (max-width: 768px) {
+
+       .ts-nav-links,
+       .ts-nav-cta {
+           display: none;
+       }
+
+       .ts-hamburger {
+           display: flex;
+       }
+
+       .ts-nav.open+.ts-mobile-menu {
+           display: flex;
+       }
+
+       .ts-hero {
+           padding: 64px 0 72px;
+           min-height: auto;
+       }
+
+       .ts-hero-headline {
+           font-size: 36px;
+       }
+
+       .ts-hero-sub {
+           font-size: 15px;
+       }
+
+       .ts-hero-orb1 {
+           width: 260px;
+           height: 260px;
+           top: -60px;
+           right: -40px;
+       }
+
+       .ts-hero-orb2 {
+           display: none;
+       }
+   }
+
+
+   @media (max-width: 480px) {
+       .ts-hero-headline {
+           font-size: 30px;
+       }
+
+       .ts-hero-btns {
+           flex-direction: column;
+       }
+
+       .ts-btn-primary,
+       .ts-btn-outline {
+           width: 100%;
+           text-align: center;
+       }
+   }
